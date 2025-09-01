@@ -16,7 +16,11 @@ const ovo = Ovo({
 export const metadata = {
   title: "Navindu Jayalath",
   description: "",
+  icons: {
+    icon: "/favicon3.png",
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
