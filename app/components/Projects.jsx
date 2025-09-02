@@ -62,7 +62,7 @@ const Projects = () => {
   const DeviceMockup = ({ project }) => {
     if (project.deviceType === 'mobile') {
       return (
-        <div className="relative mx-auto">
+        <div id="projects" className="relative mx-auto">
           {/* Mobile Frame */}
           <div className="relative w-40 h-72 bg-gray-800 rounded-3xl p-2 shadow-2xl">
             <div className="w-full h-full bg-white rounded-2xl overflow-hidden relative">
@@ -83,7 +83,7 @@ const Projects = () => {
     }
 
     return (
-      <div className="relative">
+      <div  id="projects" className="relative">
         {/* Laptop Frame */}
         <div className="relative w-full max-w-sm mx-auto">
           {/* Screen */}

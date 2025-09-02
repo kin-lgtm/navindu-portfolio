@@ -8,7 +8,7 @@ import { assets } from '@/assets/assets';
 const Header = () => {
   // Typewriter effect for two-line header text
   const line1 = "Hello I'm";
-  const line2 = "Navindu Prabath Jayalth";
+  const line2 = "Navindu Prabath Jayalath";
   const [displayedLine1, setDisplayedLine1] = useState("");
   const [displayedLine2, setDisplayedLine2] = useState("");
   useEffect(() => {

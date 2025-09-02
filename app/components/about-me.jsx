@@ -57,7 +57,7 @@ const About = () => {
             className="group-hover:text-blue-300 transition-colors duration-300"
             variants={itemVariants}
           >
-            I am an IT undergraduate at the University of Moratuwa, specializing in Software Engineering and Artificial Intelligence.
+            I am an IT undergraduate at the University of Moratuwa, specializing in Software Engineering and keen to learn Artificial Intelligence and Data Science and related areas.
           </motion.li>
           <motion.li
             className="group-hover:text-blue-300 transition-colors duration-300"
