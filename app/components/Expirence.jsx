@@ -10,13 +10,13 @@ const Experience = () => {
   const experiences = [
     {
       year: '2025',
-      title: 'Associate Software Engineer - Intern',
+      title: 'Former Associate Software Engineer',
       company: 'BuildUps Consultancy Private Limited',
-      description: 'As an Associate Software Engineer Intern, I gained hands-on experience with diverse programming languages and development areas. I contributed to digital transformation and web development projects, supporting the design and optimization of enterprise applications while enhancing problem-solving skills, teamwork, and exposure to the full software development lifecycle.',
+      description: 'As an Associate Software Engineer, I gained hands-on experience with diverse programming languages and development areas. I contributed to digital transformation and web development projects, supporting the design and optimization of enterprise applications while enhancing problem-solving skills, teamwork, and exposure to the full software development lifecycle.',
     },
     {
       year: '2024',
-      title: 'Digital Transformation Strategist',
+      title: 'Former Digital Transformation Strategist',
       company: 'BuildUps Consultancy Private Limited',
       description: 'As a Digital Transformation Strategist, I played a key role in guiding organizations through their digital transformation journeys. I collaborated with cross-functional teams to identify opportunities for leveraging technology to improve business processes and customer experiences. My work involved conducting assessments, developing roadmaps, and implementing solutions that drive innovation and efficiency.',
     },

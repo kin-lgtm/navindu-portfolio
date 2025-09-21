@@ -59,7 +59,7 @@ const Header = () => {
         <div className="space-y-4 sm:space-y-6 text-center lg:text-left">
           <div className="space-y-2">
             <p className="text-gray-400 text-xs sm:text-sm font-medium tracking-wider uppercase">
-              Software Developer
+              Full Stack Developer
             </p>
             <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold">
               <span className="typewriter-text">
@@ -79,23 +79,21 @@ const Header = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-            <button className="bg-blue-400 hover:bg-blue-600 text-black font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full border-2 border-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
+            <a href="https://github.com/kin-lgtm" className="bg-blue-400 hover:bg-blue-400 text-black font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full border-2 border-blue-500 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
               DOWNLOAD CV ↓
-            </button>
+            </a>
             
             <div className="flex space-x-3">
-              <a href="#" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
+              <a href="https://github.com/kin-lgtm" className="bg-slate-800SSS w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
                 <Github size={16} className="sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
+              <a href="http://www.linkedin.com/in/navindu-prabath-jayalath" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
                 <Linkedin size={16} className="sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
+              <a href="navijaye@gmail.com" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
                 <Mail size={16} className="sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="bg-slate-800 w-8 sm:w-10 h-8 sm:h-10 border-2 border-slate-600 hover:border-blue-400 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-400/20">
-                <Twitter size={16} className="sm:w-5 sm:h-5" />
-              </a>
+              
             </div>
           </div>
         </div>

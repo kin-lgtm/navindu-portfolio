@@ -35,7 +35,7 @@ const Projects = () => {
       image: "/TripSuthra.PNG", // Ensure this file exists in the public folder
       deviceType: "laptop",
       githubUrl: "https://github.com/ashiduDissanayake/TripSuthra",
-      liveUrl: "#",
+      
       tags: ["Next.js", "Tailwind CSS", "Firebase", "AI", "SQL", "Tailwind CSS", "Gemini API"],
     },
     
@@ -45,7 +45,7 @@ const Projects = () => {
       description: "E-commerce platform that we developed for Exports Tea, Herbals, spices  in Sri Lanka by using HTML,CSS, Java Script, PHP.",
       image: "/Crossline.png", // Updated to a valid path; replace with actual image if available
       deviceType: "laptop",
-      githubUrl: "#",
+      
       liveUrl: "https://crosslinelk.com/", // Corrected to a valid path or remove if not a URL
       tags: ["React", "CSS", "JavaScript", "PHP", "WordPress"],
     },
@@ -67,7 +67,7 @@ const Projects = () => {
       deviceType: "laptop",
       githubUrl: "https://github.com/kin-lgtm/navindu-portfolio",
       liveUrl: "https://navindu-portfolio-lyart.vercel.app/", // Corrected to a valid path or remove if not a URL
-      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      tags: ["Next.js", "Tailwind CSS", "Framer Motion", "email.js"],
     },
     {
       id: 7,
@@ -75,7 +75,7 @@ const Projects = () => {
       description: "A platform for a company that progress through integrated solutions in energy, infrastructure, and strategic ventures.",
       image: "/renventure.png", // Updated to a valid path; replace with actual image if available
       deviceType: "laptop",
-      githubUrl: "#",
+      
       liveUrl: "https://renventure.lk/", // Corrected to a valid path or remove if not a URL
       tags: ["React", "CSS", "SCSS", "Firebase" , "JavaScript"],
     },
