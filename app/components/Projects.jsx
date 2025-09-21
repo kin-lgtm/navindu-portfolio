@@ -9,6 +9,16 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "V Pass App",
+      description: "Mobile App - Allows vehicle owners to manage their vehicle details and documents with NET File Manager Service Center center. \n\n Admin panel - Used to manage service centers, bookings, and other features. Built with NET, React (Next.js), Tailwind CSS.",
+      image: "/VPassApp.jpg", // Ensure this file exists in the public folder
+      deviceType: "laptop",
+      githubUrl: "https://github.com/NeonCoders-UoM",
+      liveUrl: "#",
+      tags: ["Next.js","Flutter", "Tailwind CSS", "ASP.NET Core", "MS SQL"],
+    },
+    {
+      id: 2,
       title: "Smart Soil Tracker",
       description: "A device designed to simplify and enhance modern farming. This AgriTech solution gives farmers real-time insights into the health of their soil. By offering an easy-to-understand summary of nutrient levels, the Smart Soil Tracker helps farmers make optimized data of resources that boost crop yields and sustainability.",
       image: "/SoilTracker.PNG", // Ensure this file exists in the public folder
@@ -17,28 +27,30 @@ const Projects = () => {
       liveUrl: "https://npk-data-tracker-655de.web.app/",
       tags: ["Arduino", "Microcontrollers", "NPK Sensor", "Firestore", "React.js", "HTML", "CSS"],
     },
-    {
-      id: 2,
-      title: "V Pass App",
-      description: "Mobile App - Allows vehicle owners to manage their vehicle details and documents with NET File Manager Service Center center admin panel - Used to manage service centers, bookings, and other features. Built with NET, React (Next.js), Tailwind CSS.",
-      image: "/VPassApp.jpg", // Ensure this file exists in the public folder
-      deviceType: "laptop",
-      githubUrl: "https://github.com/NeonCoders-UoM",
-      liveUrl: "#",
-      tags: ["React (Next.js)", "Tailwind CSS", ".NET", "SQL"],
-    },
+    
     {
       id: 3,
       title: "TripSuthra - National Tourism Solution",
       description: "Competition project - application to showcase travel suggestions. Managed the creation of a comprehensive plan to simplify in Sri Lanka. Includes an administrative dashboard for managing visas, an AI-powered chat bot for trip recommendations, as well as a trip data-rich interactive map.",
       image: "/TripSuthra.PNG", // Ensure this file exists in the public folder
       deviceType: "laptop",
-      githubUrl: "#",
+      githubUrl: "https://github.com/ashiduDissanayake/TripSuthra",
       liveUrl: "#",
-      tags: ["React Native", "Tailwind CSS", "Firebase", "AI", "SQL", "Tailwind CSS", "Gemini API"],
+      tags: ["Next.js", "Tailwind CSS", "Firebase", "AI", "SQL", "Tailwind CSS", "Gemini API"],
     },
+    
     {
       id: 4,
+      title: "Crossline",
+      description: "E-commerce platform that we developed for Exports Tea, Herbals, spices  in Sri Lanka by using HTML,CSS, Java Script, PHP.",
+      image: "/Crossline.png", // Updated to a valid path; replace with actual image if available
+      deviceType: "laptop",
+      githubUrl: "#",
+      liveUrl: "https://crosslinelk.com/", // Corrected to a valid path or remove if not a URL
+      tags: ["React", "CSS", "JavaScript", "PHP", "WordPress"],
+    },
+    {
+      id: 5,
       title: "Serenicraft Web Development Project",
       description: "E-commerce platform that we developed for handicrafts in Sri Lanka by using HTML,CSS, Java Script, PHP.",
       image: "/Serenicraft.PNG", // Ensure this file exists in the public folder
@@ -48,14 +60,24 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript", "PHP"],
     },
     {
-      id: 5,
-      title: "Crossline",
-      description: "E-commerce platform that we developed for Exports Tea, Herbals, spices  in Sri Lanka by using HTML,CSS, Java Script, PHP.",
-      image: "/Crossline.png", // Updated to a valid path; replace with actual image if available
+      id: 6,
+      title: "Personal Portfolio",
+      description: " Developed a platform to showcase myself and my work. Built with Next.js, Tailwind CSS, and Framer Motion to ensure a responsive, modern, and interactive design",
+      image: "/portfolio.png", // Updated to a valid path; replace with actual image if available
+      deviceType: "laptop",
+      githubUrl: "https://github.com/kin-lgtm/navindu-portfolio",
+      liveUrl: "https://navindu-portfolio-lyart.vercel.app/", // Corrected to a valid path or remove if not a URL
+      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    },
+    {
+      id: 7,
+      title: "Renventure",
+      description: "A platform for a company that progress through integrated solutions in energy, infrastructure, and strategic ventures.",
+      image: "/renventure.png", // Updated to a valid path; replace with actual image if available
       deviceType: "laptop",
       githubUrl: "#",
-      liveUrl: "/VPassApp.jpg", // Corrected to a valid path or remove if not a URL
-      tags: ["HTML", "CSS", "JavaScript", "PHP"],
+      liveUrl: "https://renventure.lk/", // Corrected to a valid path or remove if not a URL
+      tags: ["React", "CSS", "SCSS", "Firebase" , "JavaScript"],
     },
   ];
 
@@ -158,6 +180,18 @@ const Projects = () => {
                 {project.title}
               </h3>
               <p className="text-sm text-gray-300 leading-relaxed">{project.description}</p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="px-2 py-1 text-xs bg-slate-700/70 text-blue-300 rounded-md border border-slate-600/50 hover:bg-slate-600/70 transition-colors duration-300"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
               {/* Action Buttons */}
               <div className="flex items-center space-x-4 pt-4">

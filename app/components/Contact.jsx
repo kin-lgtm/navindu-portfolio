@@ -149,7 +149,7 @@ const Contact = () => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 hover:from-blue-600 hover:via-purple-600 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg shadow-blue-500/25"
+              className="w-full bg-blue-400 hover:from-blue-600 hover:via-purple-600 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg shadow-blue-500/25"
             >
               <span>Send Message</span>
               <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

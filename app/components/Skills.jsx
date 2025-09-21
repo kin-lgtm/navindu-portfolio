@@ -15,18 +15,19 @@ const Skills = () => {
     { category: 'Frontend Development', name: 'Flutter', icon: 'https://api.iconify.design/vscode-icons/file-type-flutter.svg', color: 'from-blue-400 to-blue-500' },
 
     // Backend Development
-    { category: 'Backend Development', name: 'Python', icon: 'https://api.iconify.design/vscode-icons/file-type-python.svg', color: 'from-yellow-400 to-yellow-500' },
+    
     { category: 'Backend Development', name: 'C', icon: 'https://api.iconify.design/vscode-icons/file-type-c.svg', color: 'from-blue-500 to-blue-600' },
     { category: 'Backend Development', name: 'C#', icon: 'https://api.iconify.design/vscode-icons/file-type-csharp2.svg', color: 'from-purple-500 to-purple-600' },
+      { category: 'Backend Development', name: 'ASP.NET Core', icon: 'https://api.iconify.design/vscode-icons/file-type-asp.svg', color: 'from-blue-500 to-blue-600' },
     { category: 'Backend Development', name: 'Java', icon: 'https://api.iconify.design/vscode-icons/file-type-java.svg', color: 'from-orange-500 to-red-500' },
     { category: 'Backend Development', name: 'PHP', icon: 'https://api.iconify.design/vscode-icons/file-type-php.svg', color: 'from-indigo-500 to-indigo-600' },
     { category: 'Backend Development', name: 'Laravel', icon: 'https://api.iconify.design/simple-icons/laravel.svg', color: 'from-red-500 to-red-600' },
-    { category: 'Backend Development', name: 'ASP.NET Core', icon: 'https://api.iconify.design/vscode-icons/file-type-asp.svg', color: 'from-blue-500 to-blue-600' },
+    { category: 'Backend Development', name: 'Python', icon: 'https://api.iconify.design/vscode-icons/file-type-python.svg', color: 'from-yellow-400 to-yellow-500' },
     { category: 'Backend Development', name: 'Dart', icon: 'https://api.iconify.design/vscode-icons/file-type-dartlang.svg', color: 'from-blue-400 to-blue-500' },
 
     // Database & Cloud
-    { category: 'Database & Cloud', name: 'MySQL', icon: 'https://api.iconify.design/vscode-icons/file-type-mysql.svg', color: 'from-teal-500 to-teal-600' },
     { category: 'Database & Cloud', name: 'MS SQL', icon: 'https://api.iconify.design/vscode-icons/file-type-sql.svg', color: 'from-gray-500 to-gray-600' },
+    { category: 'Database & Cloud', name: 'MySQL', icon: 'https://api.iconify.design/vscode-icons/file-type-mysql.svg', color: 'from-teal-500 to-teal-600' },
     { category: 'Database & Cloud', name: 'Firebase', icon: 'https://api.iconify.design/vscode-icons/file-type-firebase.svg', color: 'from-yellow-500 to-red-500' },
   ];
 

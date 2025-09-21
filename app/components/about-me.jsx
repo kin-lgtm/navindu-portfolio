@@ -112,7 +112,7 @@ const About = () => {
                   className="text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
                   variants={itemVariants}
                 >
-                  10+
+                  5+
                 </motion.p>
                 <motion.p className="text-gray-300" variants={itemVariants}>
                   Projects
