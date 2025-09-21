@@ -21,7 +21,7 @@ const Projects = () => {
       id: 2,
       title: "Smart Soil Tracker",
       description: "A device designed to simplify and enhance modern farming. This AgriTech solution gives farmers real-time insights into the health of their soil. By offering an easy-to-understand summary of nutrient levels, the Smart Soil Tracker helps farmers make optimized data of resources that boost crop yields and sustainability.",
-      image: "/SoilTracker.PNG", // Ensure this file exists in the public folder
+      image: "/SoilTracker.png", // Ensure this file exists in the public folder
       deviceType: "laptop",
       githubUrl: "https://github.com/nethmalgunawardhana/NPK-Data-Tracker",
       liveUrl: "https://npk-data-tracker-655de.web.app/",
@@ -43,7 +43,7 @@ const Projects = () => {
       id: 4,
       title: "Crossline",
       description: "E-commerce platform that we developed for Exports Tea, Herbals, spices  in Sri Lanka by using HTML,CSS, Java Script, PHP.",
-      image: "/Crossline.png", // Updated to a valid path; replace with actual image if available
+      image: "/Crossline.PNG", // Updated to a valid path; replace with actual image if available
       deviceType: "laptop",
       
       liveUrl: "https://crosslinelk.com/", // Corrected to a valid path or remove if not a URL
@@ -73,7 +73,7 @@ const Projects = () => {
       id: 7,
       title: "Renventure",
       description: "A platform for a company that progress through integrated solutions in energy, infrastructure, and strategic ventures.",
-      image: "/renventure.png", // Updated to a valid path; replace with actual image if available
+      image: "/renventure.PNG", // Updated to a valid path; replace with actual image if available
       deviceType: "laptop",
       
       liveUrl: "https://renventure.lk/", // Corrected to a valid path or remove if not a URL
