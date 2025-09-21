@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "V Pass App",
+      title: "V Pass Mobile App & Admin Panel",
       description: "Mobile App - Allows vehicle owners to manage their vehicle details and documents with NET File Manager Service Center center. \n\n Admin panel - Used to manage service centers, bookings, and other features. Built with NET, React (Next.js), Tailwind CSS.",
       image: "/VPassApp.jpg", // Ensure this file exists in the public folder
       deviceType: "laptop",
@@ -36,7 +36,7 @@ const Projects = () => {
       deviceType: "laptop",
       githubUrl: "https://github.com/ashiduDissanayake/TripSuthra",
       
-      tags: ["Next.js", "Tailwind CSS", "Firebase", "AI", "SQL", "Tailwind CSS", "Gemini API"],
+      tags: ["Next.js", "Tailwind CSS", "Firebase", "SQL", "Tailwind CSS", "Gemini API"],
     },
     
     {
