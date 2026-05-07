@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "V Pass Mobile App & Admin Panel",
+      title: "AI Powered V Pass Mobile App & Admin Panel",
       description: "Mobile App - Allows vehicle owners to manage their vehicle details and documents with NET File Manager Service Center center. \n\n Admin panel - Used to manage service centers, bookings, and other features. Built with NET, React (Next.js), Tailwind CSS.",
       image: "/VPassApp.jpg", // Ensure this file exists in the public folder
       deviceType: "laptop",
@@ -78,6 +78,51 @@ const Projects = () => {
       
       liveUrl: "https://renventure.lk/", // Corrected to a valid path or remove if not a URL
       tags: ["React", "CSS", "SCSS", "Firebase" , "JavaScript"],
+    },
+    {
+      id: 8,
+      title: "Asian Agriculture Consultancies",
+      description: "Developed the official website and admin panel for Asia's leading agricultural consultancy in Sri Lanka. With more than a decade of combined experience, we provide comprehensive agricultural solutions that blend time-tested farming knowledge with cutting-edge technology. Our mission is to empower farmers and agribusinesses across Asia to achieve sustainable growth and profitability.",
+      image: "/agricultural-consultancy.png",
+      deviceType: "laptop",
+      liveUrl: "https://agricultureconsultancy.services/",
+      tags: ["React", "Vite", "Firebase", "Node.js"],
+    },
+    {
+      id: 9,
+      title: "IC SCALE - International Conference Platform",
+      description: "Developed the official website for the International Conference on Supply Chain and Logistics Engineering. A comprehensive platform showcasing conference details, speaker information, and registration management.",
+      image: "/ic-scale.png",
+      deviceType: "laptop",
+      liveUrl: "https://scale.uom.lk/",
+      tags: ["React", "Vite", "MySQL", "Payhere"],
+    },
+    {
+      id: 10,
+      title: "National Environmental Forum",
+      description: "Developed the official website for the National Environmental Forum, a platform dedicated to environmental conservation and sustainability initiatives.",
+      image: "/nef.png",
+      deviceType: "laptop",
+      liveUrl: "https://nef.lk/",
+      tags: ["React", "Vite", "Firebase", "Node.js"],
+    },
+    {
+      id: 11,
+      title: "Auto Care Service Center Management System",
+      description: "A comprehensive system developed for customers, employees, and the service center owner to streamline operations and enhance user experience. Customers can book appointments online and track real-time progress through WebSocket integration, with an intelligent chatbot powered by Retrieval-Augmented Generation (RAG) and Gemini Flash 2.5. Employees can view assigned projects and appointments in real time and update progress instantly. Service Center Owner can efficiently manage customers, employees, and services through an interactive dashboard.",
+      image: "/auto-care-service.png",
+      deviceType: "laptop",
+      tags: ["Spring Boot", "RAG", "WebSocket", "Gemini Flash 2.5", "Real-time Updates", "Chatbot"],
+      duration: "Oct 2025 – Nov 2025",
+    },
+    {
+      id: 12,
+      title: "Ayubowan Gifts Collection",
+      description: "The premier destination for authentic Sri Lankan products for over three decades. We pride ourselves on offering the finest handcrafted items, premium teas, and curated Sri Lankan merchandise. A modern e-commerce platform showcasing traditional Sri Lankan craftsmanship and cultural products to local and international customers.",
+      image: "/ayubowan-gifts.png",
+      deviceType: "laptop",
+      liveUrl: "https://ayubowan.com/",
+      tags: ["E-commerce", "Sri Lankan Products", "Handcrafted Items", "React", "Node.js"],
     },
   ];
 

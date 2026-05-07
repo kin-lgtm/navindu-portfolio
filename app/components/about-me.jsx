@@ -96,7 +96,7 @@ const About = () => {
                   className="text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
                   variants={itemVariants}
                 >
-                  2+
+                  3+
                 </motion.p>
                 <motion.p className="text-gray-300" variants={itemVariants}>
                   Years Coding
@@ -112,7 +112,7 @@ const About = () => {
                   className="text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
                   variants={itemVariants}
                 >
-                  5+
+                  12+
                 </motion.p>
                 <motion.p className="text-gray-300" variants={itemVariants}>
                   Projects
@@ -128,7 +128,7 @@ const About = () => {
                   className="text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors duration-300"
                   variants={itemVariants}
                 >
-                  5+
+                  8+
                 </motion.p>
                 <motion.p className="text-gray-300" variants={itemVariants}>
                   Tech Stacks

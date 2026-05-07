@@ -10,7 +10,7 @@ const Experience = () => {
   const experiences = [
     {
       year: '2025',
-      title: 'Former Associate Software Engineer',
+      title: 'Former Full Stack Engineer',
       company: 'BuildUps Consultancy Private Limited',
       description: 'As an Associate Software Engineer, I gained hands-on experience with diverse programming languages and development areas. I contributed to digital transformation and web development projects, supporting the design and optimization of enterprise applications while enhancing problem-solving skills, teamwork, and exposure to the full software development lifecycle.',
     },
