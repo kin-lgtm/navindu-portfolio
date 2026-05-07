@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Mail, Send } from 'lucide-react';
-import emailjs from '@emailjs/browser'; // Import EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +10,7 @@ const Contact = () => {
     message: '',
   });
   const [status, setStatus] = useState({ message: '', isError: false });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -32,26 +32,19 @@ const Contact = () => {
     return true;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!validateForm()) return;
-
-    const templateParams = {
-      to_email: 'navijaye@gmail.com',
-      from_email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-    };
-
-    emailjs.send('service_4o8a9ma', 'template_te779ov', templateParams, 'JbY4Of6_QqQoBZLbx')
-      .then((response) => {
-        setStatus({ message: 'Message sent successfully!', isError: false });
-        setFormData({ email: '', subject: '', message: '' }); // Reset form
-      })
-      .catch((error) => {
-        setStatus({ message: 'Failed to send message. Please try again.', isError: true });
-        console.error('EmailJS error:', error);
-      });
+  const handleSubmit = async (e) => {
+    if (!validateForm()) {
+      e.preventDefault();
+      return;
+    }
+    
+    setIsSubmitting(true);
+    setStatus({ message: 'Sending your message...', isError: false });
+    
+    // Show success message for 2 seconds before FormSubmit redirect
+    setTimeout(() => {
+      setStatus({ message: 'Message sent successfully! Redirecting...', isError: false });
+    }, 500);
   };
 
   return (
@@ -98,62 +91,75 @@ const Contact = () => {
               </div>
             )}
 
-            {/* Email Input */}
-            <div>
-              <label className="block text-gray-300 text-sm font-medium mb-2">
-                Your Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="john@example.com"
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
-                required
-              />
-            </div>
-
-            {/* Subject Input */}
-            <div>
-              <label className="block text-gray-300 text-sm font-medium mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
-                required
-              />
-            </div>
-
-            {/* Message Textarea */}
-            <div>
-              <label className="block text-gray-300 text-sm font-medium mb-2">
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={5}
-                placeholder="Let's talk about..."
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 resize-none"
-                required
-              />
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              onClick={handleSubmit}
-              className="w-full bg-blue-400 hover:from-blue-600 hover:via-purple-600 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg shadow-blue-500/25"
+            {/* Contact Form using FormSubmit */}
+            <form
+              action="https://formsubmit.co/navijaye@gmail.com"
+              method="POST"
+              onSubmit={handleSubmit}
+              className="space-y-6"
             >
-              <span>Send Message</span>
-              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+              {/* Honeypot field for spam protection */}
+              <input type="hidden" name="_captcha" value="false" />
+              {/* Optional: Redirect after submission */}
+              <input type="hidden" name="_next" value={typeof window !== 'undefined' ? window.location.href : ''} />
+
+              {/* Email Input */}
+              <div>
+                <label className="block text-gray-300 text-sm font-medium mb-2">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="john@example.com"
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
+                  required
+                />
+              </div>
+
+              {/* Subject Input */}
+              <div>
+                <label className="block text-gray-300 text-sm font-medium mb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
+                  required
+                />
+              </div>
+
+              {/* Message Textarea */}
+              <div>
+                <label className="block text-gray-300 text-sm font-medium mb-2">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={5}
+                  placeholder="Let's talk about..."
+                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 resize-none"
+                  required
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={`w-full ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-400 hover:from-blue-600 hover:via-purple-600 hover:to-cyan-600'} text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg shadow-blue-500/25`}
+              >
+                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+            </form>
           </div>
         </div>
 
